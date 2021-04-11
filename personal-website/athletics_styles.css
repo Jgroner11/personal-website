@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+a#athletics_navlink {
+    background-color: rgb(9, 32, 181);
+}
+
+section#grid div.row {
+    clear: both;
+}
+
+section#grid div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section#grid div[class^="col-"] {
+    float: left;
+}
+
+section#grid div.col-1-1 {
+    width: 100%
+}
+
+section#grid div.col-1-2 {
+    width: 50%;
+}
+
+section#grid div {
+    padding: 2%;
+}
+
+section#grid img {
+    width: 100%;
+}
+section#grid h2 {
+    font-size: 1.25em;
+}
+
+section#grid p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+section#grid figure > figcaption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 5px 0;
+    text-align: center;    
+}
