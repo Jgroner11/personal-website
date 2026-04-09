@@ -20,27 +20,7 @@
     </header>
 
     <main class="content-page">
-      <p class="eyebrow">Projects</p>
-      <h1>Selected work, loaded from one YAML file.</h1>
-      <p class="lead">
-        Add projects to <code>projects.yaml</code> with a title, local video path, abstract,
-        and GitHub link. The page will render however many entries you include.
-      </p>
-
-      <section class="content-card project-instructions">
-        <h2>YAML structure</h2>
-        <pre><code>projects:
-  - title: "Project name"
-    video: "assets/videos/project-video.mp4"
-    abstract: |
-      A short description of the project.
-      You can make this multiple lines.
-    github: "https://github.com/your-username/repository"</code></pre>
-      </section>
-
-      <p class="project-status" data-project-status hidden></p>
-      <section class="project-list" data-project-list aria-live="polite">
-      </section>
+      <section class="project-list" data-project-list></section>
     </main>
   </div>
   <script src="js/projects.js"></script>
