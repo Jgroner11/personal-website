@@ -227,6 +227,48 @@ p {
   object-fit: cover;
 }
 
+.project-video-shell {
+  position: relative;
+}
+
+.project-video-mask {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  border: 0;
+  border-radius: 18px;
+  background-color: #1c1713;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.project-video-mask.is-hidden {
+  display: none;
+}
+
+.project-video-play {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 999px;
+  background: rgba(31, 26, 23, 0.72);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.project-video-play::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 1.12rem 0 0 1.52rem;
+  border-top: 0.78rem solid transparent;
+  border-bottom: 0.78rem solid transparent;
+  border-left: 1.2rem solid #fff8f2;
+}
+
 .project-title {
   margin-bottom: 0;
 }

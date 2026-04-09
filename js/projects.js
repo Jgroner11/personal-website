@@ -15,7 +15,12 @@ fetch("projects.yaml")
                 </svg>
               </a>
             </div>
-            <video class="project-video" controls preload="metadata" src="${project.video}"></video>
+            <div class="project-video-shell">
+              <video class="project-video" controls preload="metadata" poster="${project.thumbnail}" src="${project.video}"></video>
+              <button class="project-video-mask" type="button" style="background-image: url('${project.thumbnail}')" aria-label="Play ${project.title}">
+                <span class="project-video-play"></span>
+              </button>
+            </div>
             <div class="project-body">
               <p class="project-abstract">${project.abstract}</p>
             </div>
@@ -23,6 +28,13 @@ fetch("projects.yaml")
         `
       )
       .join("");
+
+    document.querySelectorAll(".project-video-mask").forEach((button) => {
+      button.addEventListener("click", () => {
+        button.classList.add("is-hidden");
+        button.previousElementSibling.play();
+      });
+    });
   });
 
 function parseProjects(yaml) {

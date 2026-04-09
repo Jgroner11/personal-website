@@ -1,6 +1,6 @@
 projects:
   - title: "Sparse ANN"
     video: "assets/videos/sparseANN.mp4"
-    abstract: |
-      What happens when you decrease the connectivity of a neural network?
+    thumbnail: "assets/videos/sparseANN.png"
+    abstract: ""
     github: "https://github.com/Jgroner11/sparseANN"
