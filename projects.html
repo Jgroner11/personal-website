@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects page for Jacob Groner">
+  <title>Projects | Jacob Groner</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="site-title" href="index.html">Jacob Groner</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="purpose.html">Purpose</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="agents.html">Agents</a>
+      </nav>
+    </header>
+
+    <main class="content-page">
+      <p class="eyebrow">Projects</p>
+      <h1>Selected work, loaded from one YAML file.</h1>
+      <p class="lead">
+        Add projects to <code>projects.yaml</code> with a title, local video path, abstract,
+        and GitHub link. The page will render however many entries you include.
+      </p>
+
+      <section class="content-card project-instructions">
+        <h2>YAML structure</h2>
+        <pre><code>projects:
+  - title: "Project name"
+    video: "assets/videos/project-video.mp4"
+    abstract: |
+      A short description of the project.
+      You can make this multiple lines.
+    github: "https://github.com/your-username/repository"</code></pre>
+      </section>
+
+      <p class="project-status" data-project-status hidden></p>
+      <section class="project-list" data-project-list aria-live="polite">
+      </section>
+    </main>
+  </div>
+  <script src="js/projects.js"></script>
+</body>
+</html>

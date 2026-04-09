@@ -1,0 +1,7 @@
+projects:
+  - title: "Example Project"
+    video: "assets/videos/example-project.mp4"
+    abstract: |
+      Write a short abstract here. This can be one paragraph or several lines,
+      and the site will display it as the project summary.
+    github: "https://github.com/your-username/example-project"
