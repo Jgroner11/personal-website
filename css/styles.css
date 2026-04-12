@@ -1,6 +1,5 @@
 :root {
   --bg: #efe7da;
-  --bg-soft: #f8f2e8;
   --panel: rgba(255, 252, 246, 0.88);
   --panel-strong: #fffdf8;
   --ink: #1f1a17;
@@ -209,13 +208,6 @@ p {
 .cv-eyebrow {
   font-size: 0.96rem;
   text-transform: none;
-}
-
-.cv-role {
-  max-width: 36rem;
-  margin-bottom: 0;
-  font-size: 1.15rem;
-  color: var(--ink);
 }
 
 .cv-download {
