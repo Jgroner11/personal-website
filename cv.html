@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CV page for Jacob Groner">
-  <title>CV | Jacob Groner</title>
+  <title></title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js"></script>
 </head>
 <body>
   <div class="page-shell">
@@ -18,19 +19,186 @@
       </nav>
     </header>
 
-    <main class="content-page">
-      <p class="eyebrow">CV</p>
-      <h1>Experience, education, and credentials.</h1>
-      <p class="lead">
-        This page can become a more readable version of your resume, with enough structure
-        to add work history, education, publications, awards, or links.
-      </p>
+    <main class="content-page cv-page">
+      <section class="content-card cv-hero">
+        <p class="eyebrow cv-eyebrow">AI Researcher</p>
+        <p class="cv-summary">
+          I am a researcher working at the intersection of machine learning, computational neuroscience, and systems neuroscience. I have experience building pipelines for model training, making bots that play games, and designing experimental tasks for mice. My primary skill is software development: I write python code and prompt coding agents.
+        </p>
+        <a class="button-link cv-download" href="assets/docs/Jacob_Groner_CV.pdf" download>Download CV</a>
+      </section>
 
-      <section class="content-card">
-        <h2>Suggested sections</h2>
-        <p>Experience, education, selected achievements, skills, and downloadable materials.</p>
+      <section class="cv-section">
+        <h2 class="cv-section-title">Experience</h2>
+
+        <article class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3>NeuroAI Research</h3>
+              <p class="cv-entry-org">
+                <a href="https://neuroai.github.io/sunlab/" target="_blank" rel="noreferrer">Lab of Professor Weinan Sun</a> · Ithaca, NY
+              </p>
+            </div>
+            <p class="cv-entry-date">May 2024 - February 2026</p>
+          </div>
+          <ul class="cv-list">
+            <li>
+              Developed virtual reality mazes and experiment software for head-fixed mouse navigation.
+              <a class="cv-inline-link" href="https://github.com/Sun-Lab-NBB" target="_blank" rel="noreferrer" aria-label="View Sun Lab NBB GitHub organization">
+                <svg viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49C4 14.09 3.48 13.22 3.32 12.77c-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.52 7.52 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+                </svg>
+              </a>
+            </li>
+            <li>Built a wavefront pathfinding system with a Hidden Markov Model to support navigation analysis and task design.</li>
+            <li>Identified hippocampal place cells from calcium imaging data and contributed across the broader experiment pipeline.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3>Neuroscience Research</h3>
+              <p class="cv-entry-org">
+                <a href="https://ellwoodlab.org/" target="_blank" rel="noreferrer">Lab of Professor Ian Ellwood</a> · Ithaca, NY
+              </p>
+            </div>
+            <p class="cv-entry-date">August 2021 - November 2022</p>
+          </div>
+          <ul class="cv-list">
+            <li>Built a virtual reality system that paired head-fixed mouse navigation with brain imaging.</li>
+            <li>Completed wiring, mechanical setup, and software work around Parker Motion hardware.</li>
+            <li>Programmed a Unity maze control system that mapped mouse movement into real-time wall positioning.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3>Software Developer</h3>
+              <p class="cv-entry-org">
+                <a href="https://fireflyneuro.com/" target="_blank" rel="noreferrer">Firefly Neuroscience</a> · Tel Aviv, Israel
+              </p>
+            </div>
+            <p class="cv-entry-date">May 2022 - August 2022</p>
+          </div>
+          <ul class="cv-list">
+            <li>Designed an LSTM-based noise detection model for multichannel EEG data.</li>
+            <li>Improved tooling for labeling eye and muscle artifacts in neurophysiology signals.</li>
+            <li>Wrote augmentation code to strengthen model robustness on noisy real-world recordings.</li>
+          </ul>
+        </article>
+
+        <article class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3>Instructor</h3>
+              <p class="cv-entry-org">
+                <a href="https://www.idtech.com/" target="_blank" rel="noreferrer">ID Tech</a> · Irvine, CA
+              </p>
+            </div>
+            <p class="cv-entry-date">June 2021 - August 2021</p>
+          </div>
+          <ul class="cv-list">
+            <li>Taught Java, Python, AI, and game design to students ages 8 through 17.</li>
+            <li>Prepared daily two-hour lessons and coached small groups through hands-on coding projects.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Education</h2>
+
+        <article class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3>Cornell University, College of Arts &amp; Sciences</h3>
+              <p class="cv-entry-org">B.A. in Computer Science and Mathematics, Minor in Biological Sciences</p>
+            </div>
+            <p class="cv-entry-date">Graduated December 2025</p>
+          </div>
+          <ul class="cv-pill-list">
+            <li>Machine Learning</li>
+            <li>AI Reasoning and Decision-Making</li>
+            <li>Reinforcement Learning</li>
+            <li>Program Synthesis</li>
+            <li>Analysis of Algorithms</li>
+            <li>Linear Algebra</li>
+            <li>Statistics</li>
+            <li>Differential Equations</li>
+            <li>Neurobiology and Behavior</li>
+            <li>Cognitive Science</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Skills</h2>
+
+        <div class="cv-skill-grid">
+          <article class="cv-skill-card">
+            <h3>ML Techniques</h3>
+            <ul class="cv-pill-list">
+              <li class="cv-expand-pill"><span class="cv-pill-short">LLM</span><span class="cv-pill-full">Large Language Model</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">PPO</span><span class="cv-pill-full">Proximal Policy Optimization</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">DQN</span><span class="cv-pill-full">Deep Q-Network</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">LSTM</span><span class="cv-pill-full">Long Short-Term Memory</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">CNN</span><span class="cv-pill-full">Convolutional Neural Network</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">RAG</span><span class="cv-pill-full">Retrieval-Augmented Generation</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">VAE</span><span class="cv-pill-full">Variational Autoencoder</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">HMM</span><span class="cv-pill-full">Hidden Markov Model</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">EM</span><span class="cv-pill-full">Expectation Maximization</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">MCTS</span><span class="cv-pill-full">Monte Carlo Tree Search</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">A*</span><span class="cv-pill-full">A* Search</span></li>
+              <li class="cv-expand-pill"><span class="cv-pill-short">PCA</span><span class="cv-pill-full">Principal Component Analysis</span></li>
+            </ul>
+          </article>
+
+          <article class="cv-skill-card">
+            <h3>Tools &amp; Workflow</h3>
+            <ul class="cv-pill-list">
+              <li>PyTorch</li>
+              <li>JAX</li>
+              <li>OpenAI Gym</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Plotly</li>
+              <li>VS Code</li>
+              <li>Git</li>
+              <li>Windows</li>
+              <li>Codex</li>
+              <li>Agent-assisted development</li>
+            </ul>
+          </article>
+
+          <article class="cv-skill-card">
+            <h3>Programming</h3>
+            <ul class="cv-pill-list">
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>MATLAB</li>
+              <li>OCaml</li>
+            </ul>
+          </article>
+
+          <article class="cv-skill-card">
+            <h3>Languages &amp; Interests</h3>
+            <ul class="cv-pill-list">
+              <li>English</li>
+              <li>Hebrew</li>
+              <li>Chess</li>
+              <li>Bass Guitar</li>
+              <li>Weightlifting</li>
+              <li>Surfing</li>
+              <li>Ultimate Frisbee</li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
   </div>
+  <script src="js/cv.js"></script>
 </body>
 </html>
