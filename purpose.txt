@@ -1,0 +1,77 @@
+I create brain-inspired Artificial Intelligence.
+
+In 2019, I came across a paper that described a neural rewiring experiment. After surgery, a ferret learned to see with its auditory cortex. This suggested that the cortex is not a compilation of evolutionarily adapted behaviors but instead runs a general purpose algorithm capable of learning anything and operating in any context. From this point on, my goal has been to understand the brain's underlying learning algorithm and program it into a computer. I began by learning mathematics and training neural networks, which seemed a natural approximation for neural computation. However, when diving deeper into gradient descent and convex optimization, I was disillusioned. While powerful tools, feedforward neural nets learn in a completely different way than the biological brain. Following this realisation, I decided to study neuroscience and seek biological plausible alternatives to traditional machine learning paradigms.
+
+Here are some neuroscience principles I am really excited about:
+
+Criticality
+    Neurons fire in cascades, and networks are regulated so that activity levels stabilize at the critical point between order and disorder. Sitting at this critical point leads to scale invariance and maximizes the efficiency of information processing.
+
+Spike Timing Dependent Plasticity (STDP)
+    Neural plasticity occurs in discrete time window. For a synapse to be strengthened, the presynaptic neuron must fire 15ms before the postsynaptic neuron fires.
+    Cite Bi and Poo
+
+Homeostatic Plasticity
+    Just as cells maintain the chemical composition of their intracellular fluid, neurons maintain their firing rate. This involves increasing excitability when the neuron is silent, and decreasing excitability or increasing inhibitory input when the neuron is tonically active.
+
+Pyramidal Neurons Learns Through Predicting Their Own Activity
+    Pyramidal neurons receive input at two distinct synaptic locations: basal and apical. Input to apical dendrites depolarizes the soma serving as a prediction that the neuron will fire. If input to basal dendrites follows, the cell fires signifying a correct prediction and leads to apical dendritic growth and increase in the number of apical spines. The "correct prediction" signal is mediated by a backpropagating action potential up the apical dendrite. Dendritic spines have high input impedance which enables them to hold credit so that the backpropagating action potential impacts specifically the synapses which were responsible for the prediction.
+    Cite spruston paper
+
+Intelligence Is Best Understood as an Emergent Property
+    Intelligence and consciousness are emergent properties created by local interactions of many autonomous units, just as a stable ecosystem emerges from competition among selfishly acting individuals of many species. Each neuron follows a program encoded in its DNA and has an internal memory encoded in transcription factors, dendritic structure, and neurotransmitter recepter compositions.
+
+World Models
+    Knowledge is predictive power. To make predictions efficiently amidst exponential possibilities, neurons form an internal representation of the external world, which tracks only the features relevant to predicting the future. Memory recall and planning are the same process and they involve simulating trajectories within this internal world model.
+    Cite: Joseph fetcho and Dario Amodeii
+
+Hierarchical Reasoning
+    While some neurons in the brain receive direct sensory input, Agranular cells in the prefrontal cortex (PFC) do not. Agranular cells do not predict the environment directly, but instead predict the activity of other neurons. As the brain develops, the network learns to trust these agranular cells to process information and govern action in place of the cells more directly connected to sensory input and motor output. This frees the lower order cells to have a simplified world model which offloads complicated decisions and predictions. As the process of offloading happens again and again into higher order neurons, a hierarchical network emerges which enables intelligent generalization and creativity.
+
+Dopamine RPE Theory
+    The neurotransmitter dopamine represents reward prediction error (RPE). When dopamine neurons fire, they cause other neurons to increase their plasticity, allowing biological brains to prioritize events actually relevant to reward.
+
+Advantage of Sparsity
+    Each concept is represented by the activation of a subpopulation of neurons in a specific pattern. A small percentage of neurons are used to represent any one concept. This sparsity leads to orthogonality of representation, which provides robustness against noise and prevents interference between concepts. Sparsity also saves energy.
+
+Plasticity for Computation
+    Biological brains make temporary changes in their synaptic strengths in order to aid decision making.
+    Cite hopfield paper
+
+Here are some ways in which artificial neural networks do not match biological neurons:
+
+Gradient Descent
+    The backpropagation algorithm for computing gradients is not biologically plausible. Despite the projection of neurotransmitters dopamine, seratonin, and norepinephrine throughout the brain, there is no way to assign credit to specific neurons from these global signals. Neurons primarily update their weights based on local interactions.
+
+Frozen Weights During Inference
+    Training occurs on large curated datasets, then weights are fixed and the shipped product is a static mathematical function. During inference, each computed example has no effect on model parameters. Even in reinforcement learning settings, where environmental responses to behavior are used to improve the model, the environmental data is stored separately and used in a training step distinct from action selection. Biological brains have no separation: weights change as behavior is performed. Not only is this better learning efficiency, but transient changes in synaptic strengths actually aids decision making, especially in complex planning tasks.
+
+Temporal Synchrony
+    Computation in a CPUs relies on an internal clock. Operations within a clock cycle are synchronized and operations of different cycles are separated into discrete steps. This architecture is poorly suited for biological neuron computation, which is event driven. Artificial neural networks compute activations layer by layer, enforcing synchronized updates across large populations of units. As a result, they cannot naturally exploit spike timing as a representational dimension or leverage oscillatory dynamics to create temporal windows that coordinate activity, support complex motor behavior, and regulate information transfer between regions.
+
+I hope to build computational brains which use neuroscience principles to address these differences and ultimately change the machine learning paradigm.
+
+I am also really excited to leverage technological advancements to accelerate research. For example, Calcium Imaging has led to a much clearer picture of how populations of neurons encode information, and Large Language Models (LLMs) have dramatically increased the speed of software development. I hope to contribute to a positive feedback loop:
+
+1. AI tools improve research capabilities
+2. Novel experiments cause a better understanding of intelligence
+3. New insights allow the creation of better AI tools.
+
+Ultimately, this cycle should be completely automated and lead to the Singularity. My conviction that this positive feedback loop is the best way to achieve my goals has motivated me to study and work with LLMs, the most intelligent computational models in 2026. It may be the case that the fastest way to create biologically plausible artificial intelligence is to just get an LLM good enough that it can explain how the brain works and then have it program the brain’s learning algorithm itself.
+
+In the case that the singularity occurs in my lifetime, these are things I would work on next:
+
+Personal Teaching Curriculum
+    Just because a superintelligence exists doesn’t mean that I personally understand how the brain works. If I could communicate to such an entity, I would ask it to explain to me in rigorous detail the genetic, chemical, and network principles which enable single celled organisms learning to work together and control a physical body. The chance to talk with such an entity is worth risking extinction.
+
+Mechanical Wings
+    With modern technology, it is not possible to wear wings and fly like a bird, since the human body can’t generate enough force and battery packs are too heavy to power wings mechanically. If I had access to a superintelligent entity, I would have it work on this problem.
+
+Aging
+    I believe that with proper technological advancements the human life span could be extended to 1000 years, maybe indefinitely. Life extension is a worthwhile goal because if combined with advanced medicine and cognitive enhancement, the subjective experience of individual humans could get much more interesting.
+
+New Species
+    I love biological diversity and would love to create my own species. I think that there are many biological niches that exist unfilled due to the slow nature of natural evolution. I would like to create traditional species with DNA as their genetic material and bear similarity to other creatures in the animal kingdom, as well as mechanical species who replicate by building new copies of themselves in factories.
+
+The Hard Problem of Consciousness
+    Why do I have a subjective experience? A superintelligence may be able to provide a better answer than theologists or philosophers.
