@@ -587,6 +587,37 @@ p {
   line-height: 1.82;
 }
 
+.purpose-article-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  margin: 0 0.12rem;
+  border-radius: 999px;
+  vertical-align: -0.26rem;
+  color: var(--accent-deep);
+  background: rgba(159, 77, 46, 0.12);
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.purpose-article-link:hover {
+  transform: translateY(-1px);
+  color: var(--accent);
+  background: rgba(159, 77, 46, 0.18);
+}
+
+.purpose-article-link:focus-visible {
+  outline: 2px solid rgba(118, 54, 29, 0.45);
+  outline-offset: 3px;
+}
+
+.purpose-article-link svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+}
+
 .purpose-list {
   display: grid;
   gap: 0.7rem;
