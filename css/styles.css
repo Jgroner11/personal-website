@@ -542,6 +542,81 @@ p {
   fill: currentColor;
 }
 
+.site-footer {
+  margin-top: 1.5rem;
+  background: #050505;
+  color: #f7f7f7;
+}
+
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.footer-kicker {
+  margin-bottom: 0.35rem;
+  color: #a9a9a9;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.footer-email {
+  margin-bottom: 0;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  margin: 0;
+  font-style: normal;
+}
+
+.contact-list a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.65rem;
+  height: 2.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  color: #ededed;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.contact-list a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.contact-list svg {
+  display: block;
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
 .purpose-page-simple {
   max-width: 780px;
   margin: 0 auto;
@@ -846,6 +921,15 @@ p {
 
   .cv-skill-grid {
     grid-template-columns: 1fr;
+  }
+
+  .site-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-list {
+    justify-content: flex-start;
   }
 
   .purpose-document {
