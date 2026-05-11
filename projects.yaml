@@ -4,3 +4,8 @@ projects:
     thumbnail: "assets/videos/sparseANN.png"
     abstract: ""
     github: "https://github.com/Jgroner11/sparseANN"
+  - title: "Lomb-Scargle Periodogram for Place Cell Detection"
+    video: "assets\videos\LombScarglePlaceCellDetection.mp4"
+    thumbnail: "assets\videos\LombScarglePlaceCellDetection.png"
+    abstract: ""
+    github: "https://github.com/Jgroner11/Hippo-Fourier"
