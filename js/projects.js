@@ -13,6 +13,18 @@ async function initProjects() {
 
   projectList.innerHTML = projects.map(renderProject).join("");
 
+  const videos = document.querySelectorAll(".project-video");
+
+  videos.forEach((video) => {
+    video.addEventListener("play", () => {
+      videos.forEach((otherVideo) => {
+        if (otherVideo !== video) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+
   document.querySelectorAll(".project-video-mask").forEach((button) => {
     button.addEventListener("click", () => {
       button.classList.add("is-hidden");
