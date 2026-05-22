@@ -258,12 +258,11 @@ p {
   max-width: 900px;
 }
 
-.projects-page .page-shell {
-  width: min(1260px, calc(100% - 2rem));
-}
-
 .projects-page .content-page {
+  width: min(1260px, calc(100vw - 2rem));
   max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .content-card {
