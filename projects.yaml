@@ -3,6 +3,7 @@ projects:
     video: "assets/videos/ssm.mp4"
     thumbnail: "assets/videos/ssm.png"
     abstract: "Infrastructure for training State Space Models"
+    github: "https://github.com/Jgroner11/ssm"
   - title: "Sparse ANN"
     video: "assets/videos/sparseANN.mp4"
     thumbnail: "assets/videos/sparseANN.png"
