@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "update:llms": "node scripts/generate-llms.js"
+  }
+}

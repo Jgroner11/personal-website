@@ -5,7 +5,7 @@ projects:
     paper: "https://arxiv.org/abs/2507.18868"
     thumbnail: "assets/videos/mirage.png"
   - title: "SSM Playground"
-    abstract: "Infrastructure for training State Space Models"
+    abstract: "Infrastructure for training State Space Models."
     github: "https://github.com/Jgroner11/ssm"
     thumbnail: "assets/videos/ssm.png"
     video: "assets/videos/ssm.mp4"

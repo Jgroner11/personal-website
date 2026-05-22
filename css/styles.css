@@ -258,6 +258,14 @@ p {
   max-width: 900px;
 }
 
+.projects-page .page-shell {
+  width: min(1260px, calc(100% - 2rem));
+}
+
+.projects-page .content-page {
+  max-width: none;
+}
+
 .content-card {
   padding: 1.7rem;
 }
@@ -477,13 +485,18 @@ p {
 
 .project-list {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 600px));
+  grid-auto-rows: 1fr;
   gap: 1.5rem;
-  justify-items: center;
+  align-items: stretch;
+  justify-content: center;
 }
 
 .project-card {
   display: grid;
+  grid-template-rows: auto auto 1fr;
   width: min(100%, 600px);
+  height: 100%;
   gap: 1rem;
   padding: 1.15rem;
   border: 1px solid var(--line);
@@ -501,7 +514,7 @@ p {
 
 .project-video {
   width: 100%;
-  max-height: 320px;
+  height: 100%;
   border-radius: 18px;
   background: #1c1713;
   object-fit: cover;
@@ -513,6 +526,7 @@ p {
 
 .project-video-shell {
   position: relative;
+  aspect-ratio: 16 / 9;
 }
 
 .project-video-mask {
@@ -964,6 +978,10 @@ p {
   }
 
   .cv-skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list {
     grid-template-columns: 1fr;
   }
 

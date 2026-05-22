@@ -15,15 +15,13 @@
 
 I am a researcher interested in building artificial intelligence that works more like a biological brain. I grew up in Tustin, California, and completed my undergraduate studies at Cornell University. Outside of work, I enjoy surfing, chess, and ultimate frisbee.
 
-For agents
-
 ## Purpose
 
-# I Create Brain Inspired Artificial Intelligence
+### I Create Brain Inspired Artificial Intelligence
 
-In 2019, I came across a paper that described a neural rewiring experiment: after surgery, a ferret learned to see with its auditory cortex. [https://www.jneurosci.org/content/12/9/3651](https://www.jneurosci.org/content/12/9/3651) This suggested that the cortex is not a compilation of evolutionarily adapted behaviors but instead runs a general purpose algorithm capable of learning anything and operating in any context. From this point on, my goal has been to understand the brain's underlying learning algorithm and program it into a computer. I began by learning mathematics and training neural networks, which seemed a natural approximation for neural computation. However, when diving deeper into gradient descent and convex optimization, I was disillusioned. While powerful tools, feedforward neural nets learn in a completely different way than the biological brain. Following this realisation, I decided to study neuroscience and seek biological plausible alternatives to traditional machine learning paradigms.
+In 2019, I came across a paper that described a neural rewiring experiment: after surgery, a ferret learned to see with its auditory cortex. [Read the neural rewiring paper](https://www.jneurosci.org/content/12/9/3651) This suggested that the cortex is not a compilation of evolutionarily adapted behaviors but instead runs a general purpose algorithm capable of learning anything and operating in any context. From this point on, my goal has been to understand the brain's underlying learning algorithm and program it into a computer. I began by learning mathematics and training neural networks, which seemed a natural approximation for neural computation. However, when diving deeper into gradient descent and convex optimization, I was disillusioned. While powerful tools, feedforward neural nets learn in a completely different way than the biological brain. Following this realisation, I decided to study neuroscience and seek biological plausible alternatives to traditional machine learning paradigms.
 
-## Here are some neuroscience principles I am really excited about:
+### Here are some neuroscience principles I am really excited about:
 
 ### Criticality
 
@@ -31,7 +29,7 @@ Neurons fire in cascades, and networks are regulated so that activity levels sta
 
 ### Spike Timing Dependent Plasticity (STDP)
 
-Neural plasticity occurs in discrete time window. For a synapse to be strengthened, the presynaptic neuron must fire 15ms before the postsynaptic neuron fires. [https://www.jneurosci.org/content/18/24/10464](https://www.jneurosci.org/content/18/24/10464)
+Neural plasticity occurs in discrete time window. For a synapse to be strengthened, the presynaptic neuron must fire 15ms before the postsynaptic neuron fires. [Read the STDP paper](https://www.jneurosci.org/content/18/24/10464)
 
 ### Homeostatic Plasticity
 
@@ -39,7 +37,7 @@ Just as cells maintain the chemical composition of their intracellular fluid, ne
 
 ### Pyramidal Neurons Learns Through Predicting Their Own Activity
 
-Pyramidal neurons receive input at two distinct synaptic locations: basal and apical. Input to apical dendrites depolarizes the soma serving as a prediction that the neuron will fire. If input to basal dendrites follows, the cell fires signifying a correct prediction and leads to apical dendritic growth and increase in the number of apical spines. The "correct prediction" signal is mediated by a backpropagating action potential up the apical dendrite. Dendritic spines have high input impedance which enables them to hold credit so that the backpropagating action potential impacts specifically the synapses which were responsible for the prediction. [https://arxiv.org/abs/1511.00083](https://arxiv.org/abs/1511.00083)
+Pyramidal neurons receive input at two distinct synaptic locations: basal and apical. Input to apical dendrites depolarizes the soma serving as a prediction that the neuron will fire. If input to basal dendrites follows, the cell fires signifying a correct prediction and leads to apical dendritic growth and increase in the number of apical spines. The "correct prediction" signal is mediated by a backpropagating action potential up the apical dendrite. Dendritic spines have high input impedance which enables them to hold credit so that the backpropagating action potential impacts specifically the synapses which were responsible for the prediction. [Read the pyramidal neuron prediction paper](https://arxiv.org/abs/1511.00083)
 
 ### Intelligence Is Best Understood as an Emergent Property
 
@@ -65,9 +63,9 @@ Each concept is represented by the activation of a subpopulation of neurons in a
 
 ### Plasticity for Computation
 
-Biological brains make temporary changes in their synaptic strengths in order to aid decision making. [https://doi.org/10.3389/fncom.2013.00098](https://doi.org/10.3389/fncom.2013.00098)
+Biological brains make temporary changes in their synaptic strengths in order to aid decision making. [Read the plasticity for computation paper](https://doi.org/10.3389/fncom.2013.00098)
 
-## Here are some ways in which artificial neural networks do not match biological neurons:
+### Here are some ways in which artificial neural networks do not match biological neurons:
 
 ### Gradient Descent
 
@@ -85,9 +83,9 @@ I hope to build computational brains which use neuroscience principles to addres
 
 I am also really excited to leverage technological advancements to accelerate research. For example, Calcium Imaging has led to a much clearer picture of how populations of neurons encode information, and Large Language Models (LLMs) have dramatically increased the speed of software development. I hope to contribute to a positive feedback loop:
 
-1. AI tools improve research capabilities
-2. Novel experiments cause a better understanding of intelligence
-3. New insights allow the creation of better AI tools.
+- AI tools improve research capabilities
+- Novel experiments cause a better understanding of intelligence
+- New insights allow the creation of better AI tools.
 
 Ultimately, this cycle should be completely automated and lead to the singularity. My conviction in this positive feedback loop has motivated me to study the transformer architecture, as LLMs are the most intelligent computational models in 2026. It may be the case that the fastest way to create biologically plausible artificial intelligence is to just get an LLM good enough that it can explain how the brain works and then have it program the brain’s learning algorithm itself.
 
@@ -115,9 +113,29 @@ Why do I have a subjective experience? A superintelligence may be able to provid
 
 ## Projects
 
+### MIRAGE
+
+A neuroscience-inspired dual-process model for compositional generalization. Project lead: [Claas Beger](https://claasbeger.github.io)
+
+[Paper](https://arxiv.org/abs/2507.18868)
+
+[GitHub](https://github.com/ClaasBeger/MIRAGE)
+
+### SSM Playground
+
+Infrastructure for training State Space Models.
+
+[GitHub](https://github.com/Jgroner11/ssm)
+
 ### Sparse ANN
 
-[https://github.com/Jgroner11/sparseANN](https://github.com/Jgroner11/sparseANN)
+[GitHub](https://github.com/Jgroner11/sparseANN)
+
+### Lomb-Scargle Periodogram for Place Cell Detection
+
+Identify place cells by converting calcium imaging data into the spatial frequency domain.
+
+[GitHub](https://github.com/Jgroner11/Hippo-Fourier)
 
 ## CV
 
@@ -125,21 +143,21 @@ Why do I have a subjective experience? A superintelligence may be able to provid
 
 I work at the intersection of machine learning, computational neuroscience, and systems neuroscience. I have experience building pipelines for model training, making bots that play games, and designing experimental tasks for mice. My primary skill is software development: I write python code and prompt coding agents.
 
-Download CV
+[Download CV](assets/docs/Jacob_Groner_CV.pdf)
 
-## Experience
+### Experience
 
-### NeuroAI Research
+#### NeuroAI Research
 
 [Lab of Professor Weinan Sun](https://neuroai.github.io/sunlab/) · Ithaca, NY
 
 May 2024 - February 2026
 
-- Developed virtual reality mazes and experiment software for head-fixed mouse navigation.
+- Developed virtual reality mazes and experiment software for head-fixed mouse navigation. [View Sun Lab NBB GitHub organization](https://github.com/Sun-Lab-NBB)
 - Built a wavefront pathfinding system with a Hidden Markov Model to support navigation analysis and task design.
 - Identified hippocampal place cells from calcium imaging data and contributed across the broader experiment pipeline.
 
-### Neuroscience Research
+#### Neuroscience Research
 
 [Lab of Professor Ian Ellwood](https://ellwoodlab.org/) · Ithaca, NY
 
@@ -149,7 +167,7 @@ August 2021 - November 2022
 - Completed wiring, mechanical setup, and software work around Parker Motion hardware.
 - Programmed a Unity maze control system that mapped mouse movement into real-time wall positioning.
 
-### Software Developer
+#### Software Developer
 
 [Firefly Neuroscience](https://fireflyneuro.com/) · Tel Aviv, Israel
 
@@ -159,7 +177,7 @@ May 2022 - August 2022
 - Improved tooling for labeling eye and muscle artifacts in neurophysiology signals.
 - Wrote augmentation code to strengthen model robustness on noisy real-world recordings.
 
-### Instructor
+#### Instructor
 
 [ID Tech](https://www.idtech.com/) · Irvine, CA
 
@@ -168,9 +186,9 @@ June 2021 - August 2021
 - Taught Java, Python, AI, and game design to students ages 8 through 17.
 - Prepared daily two-hour lessons and coached small groups through hands-on coding projects.
 
-## Education
+### Education
 
-### Cornell University, College of Arts & Sciences
+#### Cornell University, College of Arts & Sciences
 
 B.A. in Computer Science and Mathematics, Minor in Biological Sciences
 
@@ -187,36 +205,24 @@ Graduated December 2025
 - Neurobiology and Behavior
 - Cognitive Science
 
-## Skills
+### Skills
 
-### ML Techniques
+#### ML Techniques
 
-- LLM
-- Large Language Model
-- PPO
-- Proximal Policy Optimization
-- DQN
-- Deep Q-Network
-- LSTM
-- Long Short-Term Memory
-- CNN
-- Convolutional Neural Network
-- RAG
-- Retrieval-Augmented Generation
-- VAE
-- Variational Autoencoder
-- HMM
-- Hidden Markov Model
-- EM
-- Expectation Maximization
-- MCTS
-- Monte Carlo Tree Search
-- A*
-- A* Search
-- PCA
-- Principal Component Analysis
+- LLM (Large Language Model)
+- PPO (Proximal Policy Optimization)
+- DQN (Deep Q-Network)
+- LSTM (Long Short-Term Memory)
+- CNN (Convolutional Neural Network)
+- RAG (Retrieval-Augmented Generation)
+- VAE (Variational Autoencoder)
+- HMM (Hidden Markov Model)
+- EM (Expectation Maximization)
+- MCTS (Monte Carlo Tree Search)
+- A* (A* Search)
+- PCA (Principal Component Analysis)
 
-### Tools & Workflow
+#### Tools & Workflow
 
 - PyTorch
 - JAX
@@ -230,7 +236,7 @@ Graduated December 2025
 - Codex
 - Agent-assisted development
 
-### Programming
+#### Programming
 
 - Python
 - Java
@@ -239,7 +245,7 @@ Graduated December 2025
 - MATLAB
 - OCaml
 
-### Languages & Interests
+#### Languages & Interests
 
 - English
 - Hebrew
@@ -254,7 +260,5 @@ Graduated December 2025
 jacobgroner@gmail.com
 
 [LinkedIn](https://www.linkedin.com/in/jacob-groner-a591721b5/)
-
 [GitHub](https://github.com/Jgroner11)
-
 [Twitter](https://twitter.com/groner66082)
