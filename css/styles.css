@@ -507,6 +507,10 @@ p {
   object-fit: cover;
 }
 
+.project-thumbnail {
+  display: block;
+}
+
 .project-video-shell {
   position: relative;
 }
@@ -556,6 +560,12 @@ p {
 .project-abstract {
   margin-bottom: 0.8rem;
   white-space: pre-line;
+}
+
+.project-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .project-link {
