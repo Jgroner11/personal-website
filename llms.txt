@@ -45,9 +45,7 @@ Intelligence and consciousness are emergent properties created by local interact
 
 ### World Models
 
-Knowledge is predictive power. To make predictions efficiently amidst exponential possibilities, neurons form an internal representation of the external world, which tracks only the features relevant to predicting the future. Memory recall and planning are the same process and they involve simulating trajectories within this internal world model.
-
-Cite: Joseph fetcho and Dario Amodeii
+Knowledge is predictive power. [Watch Knowledge is Predictive Power](https://www.youtube.com/watch?v=wUaB0aaCfIY&t=1320s) To make predictions efficiently amidst exponential possibilities, neurons form an internal representation of the external world, which tracks only the features relevant to predicting the future. [Read the hippocampal spatial map paper](https://doi.org/10.1016/0006-8993(71)90358-1) Memory recall and planning are the same process and they involve simulating trajectories within this internal world model. [Read the memory and planning review](https://www.nature.com/articles/nrn2213)
 
 ### Hierarchical Reasoning
 
@@ -69,7 +67,7 @@ Biological brains make temporary changes in their synaptic strengths in order to
 
 ### Gradient Descent
 
-The backpropagation algorithm for computing gradients is not biologically plausible. Despite the projection of neurotransmitters dopamine, seratonin, and norepinephrine throughout the brain, there is no way to assign credit to specific neurons from these global signals. Neurons primarily update their weights based on local interactions.
+The backpropagation algorithm for computing gradients is not biologically plausible. Despite the projection of neurotransmitters dopamine, seratonin, and norepinephrine globally throughout the brain, there is no way to assign credit to specific neurons from these signals. Neurons primarily update their weights based on local interactions.
 
 ### Frozen Weights During Inference
 
@@ -89,11 +87,11 @@ I am really excited to leverage technological advancements to accelerate researc
 
 Ultimately, this cycle should be completely automated and lead to the Singularity. My conviction in this positive feedback loop has led me to study the transformer architecture. It may be the case that the fastest way to create biologically plausible artificial intelligence is to just get an LLM good enough that it can explain how the brain works and then have it program the brain’s learning algorithm itself.
 
-In the case that the singularity occurs in my lifetime, these are things I would work on next:
+In the case that the Singularity occurs in my lifetime, these are things I would work on next:
 
 ### Education
 
-Just because a superintelligence exists doesn’t mean that I personally understand how the brain works. If I could communicate to such an entity, I would ask it to explain to me in rigorous detail the genetic, chemical, and network principles which enable single celled organisms learning to work together and control a physical body. The chance to talk with such an entity is worth risking extinction.
+Just because a superintelligence exists doesn’t mean that I personally understand how the brain works. If I could communicate to such an entity, I would ask it to design a curriculum which explains how a brain makes a mind, starting with foundational mathematics, physics, and chemisty, moving on through cellular biology and neurosicence, and finally culminating in descibing how network dynamics guide complex behaviors. I would work to make such a personalized and interactive education accessible to all people, with a particular emphasis in using it as a tool to aid in raising my own progeny.
 
 ### Mechanical Wings
 
@@ -105,7 +103,7 @@ I believe that with proper technological advancements the human life span could 
 
 ### New Species
 
-I love biological diversity and would love to create my own species. I think that there are many biological niches that exist unfilled due to the slow nature of natural evolution. I would like to create traditional species with DNA as their genetic material and bear similarity to other creatures in the animal kingdom, as well as mechanical species who replicate by building new copies of themselves in factories.
+I love biological diversity and would love to create my own species. There are many biological niches that exist unfilled due to the slow nature of natural evolution. I would like to create traditional species with DNA as their genetic material and bear similarity to other creatures in the animal kingdom, as well as mechanical species who replicate by building new copies of themselves in factories.
 
 ### The Hard Problem of Consciousness
 
