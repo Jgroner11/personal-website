@@ -79,19 +79,19 @@ Training occurs on large curated datasets, then weights are fixed and the shippe
 
 Computation in a CPUs relies on an internal clock. Operations within a clock cycle are synchronized and operations of different cycles are separated into discrete steps. This architecture is poorly suited for biological neuron computation, which is event driven. Artificial neural networks compute activations layer by layer, enforcing synchronized updates across large populations of units. As a result, they cannot naturally exploit spike timing as a representational dimension or leverage oscillatory dynamics to create temporal windows that coordinate activity, support complex motor behavior, and regulate information transfer between regions.
 
-I hope to build computational brains which use neuroscience principles to address these differences and ultimately change the machine learning paradigm.
+I plan to use neuroscience principles to build computational brains which address these differences and ultimately change the machine learning paradigm.
 
-I am also really excited to leverage technological advancements to accelerate research. For example, Calcium Imaging has led to a much clearer picture of how populations of neurons encode information, and Large Language Models (LLMs) have dramatically increased the speed of software development. I hope to contribute to a positive feedback loop:
+I am really excited to leverage technological advancements to accelerate research. For example, Calcium Imaging has led to a much clearer picture of how populations of neurons encode information, and Large Language Models (LLMs) have dramatically increased the speed of software development. I hope to contribute to a positive feedback loop:
 
 - AI tools improve research capabilities
 - Novel experiments cause a better understanding of intelligence
 - New insights allow the creation of better AI tools.
 
-Ultimately, this cycle should be completely automated and lead to the singularity. My conviction in this positive feedback loop has motivated me to study the transformer architecture, as LLMs are the most intelligent computational models in 2026. It may be the case that the fastest way to create biologically plausible artificial intelligence is to just get an LLM good enough that it can explain how the brain works and then have it program the brain’s learning algorithm itself.
+Ultimately, this cycle should be completely automated and lead to the Singularity. My conviction in this positive feedback loop has led me to study the transformer architecture. It may be the case that the fastest way to create biologically plausible artificial intelligence is to just get an LLM good enough that it can explain how the brain works and then have it program the brain’s learning algorithm itself.
 
 In the case that the singularity occurs in my lifetime, these are things I would work on next:
 
-### Personal Teaching Curriculum
+### Education
 
 Just because a superintelligence exists doesn’t mean that I personally understand how the brain works. If I could communicate to such an entity, I would ask it to explain to me in rigorous detail the genetic, chemical, and network principles which enable single celled organisms learning to work together and control a physical body. The chance to talk with such an entity is worth risking extinction.
 
