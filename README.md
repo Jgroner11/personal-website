@@ -2,6 +2,8 @@
 
 Personal website and display shelf for projects, CV details, and purpose writing.
 
+Live at [jacobgroner.com](https://jacobgroner.com).
+
 ## Updating `llms.txt`
 
 `llms.txt` is generated from the site content instead of edited by hand.
