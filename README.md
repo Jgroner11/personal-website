@@ -2,7 +2,7 @@
 
 Personal website and display shelf for projects, CV details, and purpose writing.
 
-Live at [jacobgroner.com](https://jacobgroner.com).
+Live at [jacobgroner.com](http://jacobgroner.com).
 
 ## Updating `llms.txt`
 
