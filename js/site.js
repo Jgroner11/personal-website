@@ -27,6 +27,7 @@ const navLinks = [
   ["purpose.html", "Purpose"],
   ["projects.html", "Projects"],
   ["cv.html", "CV"],
+  ["tutoring.html", "Tutoring"],
 ];
 
 const contactLinks = [
