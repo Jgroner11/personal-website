@@ -8,6 +8,7 @@
 - [Purpose](purpose.html)
 - [Projects](projects.html)
 - [CV](cv.html)
+- [Tutoring](tutoring.html)
 
 ## Home
 
@@ -19,9 +20,9 @@ I am a researcher interested in building artificial intelligence that works more
 
 ### I Create Brain Inspired Artificial Intelligence
 
-In 2019, I came across a paper that described a neural rewiring experiment: after surgery, a ferret learned to see with its auditory cortex. [Read the neural rewiring paper](https://www.jneurosci.org/content/12/9/3651) This suggested that the cortex is not a compilation of evolutionarily adapted behaviors but instead runs a general purpose algorithm capable of learning anything and operating in any context. From this point on, my goal has been to understand the brain's underlying learning algorithm and program it into a computer. I began by learning mathematics and training neural networks, which seemed a natural approximation for neural computation. However, when diving deeper into gradient descent and convex optimization, I was disillusioned. While powerful tools, feedforward neural nets learn in a completely different way than the biological brain. Following this realisation, I decided to study neuroscience and seek biological plausible alternatives to traditional machine learning paradigms.
+In 2019, I came across a paper that described a neural rewiring experiment: after surgery, a ferret learned to see with its auditory cortex. [Read the neural rewiring paper](https://www.jneurosci.org/content/12/9/3651) This finding suggested that the cortex is not a compilation of evolutionarily adapted behaviors but instead runs a general purpose algorithm capable of learning anything and operating in any context. From this point on, my goal has been to understand the brain's underlying learning algorithm and program it into a computer. I began by learning mathematics and training neural networks, which seemed a natural approximation for neural computation. However, when diving deeper into gradient descent and convex optimization, I was disillusioned. While powerful tools, feedforward neural nets learn in a completely different way than the biological brain. Following this realisation, I decided to study neuroscience and seek biological plausible alternatives to traditional machine learning paradigms.
 
-### Here are some neuroscience principles I am really excited about:
+### Here are some neuroscience principles I believe are important:
 
 ### Criticality
 
@@ -77,15 +78,15 @@ Training occurs on large curated datasets, then weights are fixed and the shippe
 
 Computation in a CPUs relies on an internal clock. Operations within a clock cycle are synchronized and operations of different cycles are separated into discrete steps. This architecture is poorly suited for biological neuron computation, which is event driven. Artificial neural networks compute activations layer by layer, enforcing synchronized updates across large populations of units. As a result, they cannot naturally exploit spike timing as a representational dimension or leverage oscillatory dynamics to create temporal windows that coordinate activity, support complex motor behavior, and regulate information transfer between regions.
 
-I plan to use neuroscience principles to build computational brains which address these differences and ultimately change the machine learning paradigm.
+I use neuroscience principles to build computational brains which address these differences and will ultimately change the machine learning paradigm.
 
-I am really excited to leverage technological advancements to accelerate research. For example, Calcium Imaging has led to a much clearer picture of how populations of neurons encode information, and Large Language Models (LLMs) have dramatically increased the speed of software development. I hope to contribute to a positive feedback loop:
+I leverage technological advancements to accelerate research. For example, Calcium Imaging has led to a much clearer picture of how populations of neurons encode information, and Large Language Models (LLMs) have dramatically increased the speed of software development. I hope to contribute to a positive feedback loop:
 
 - AI tools improve research capabilities
 - Novel experiments cause a better understanding of intelligence
 - New insights allow the creation of better AI tools.
 
-Ultimately, this cycle should be completely automated and lead to the Singularity. My conviction in this positive feedback loop has led me to study the transformer architecture. It may be the case that the fastest way to create biologically plausible artificial intelligence is to just get an LLM good enough that it can explain how the brain works and then have it program the brain’s learning algorithm itself.
+Ultimately, this cycle will be completely automated and lead to the Singularity. My conviction in this positive feedback loop has led me to study the transformer architecture. It may be the case that the fastest way to create biologically plausible artificial intelligence is to just get an LLM good enough that it can explain how the brain works and then have it program the brain’s learning algorithm itself.
 
 In the case that the Singularity occurs in my lifetime, these are things I would work on next:
 
@@ -95,9 +96,9 @@ Just because a superintelligence exists doesn’t mean that I personally underst
 
 ### Mechanical Wings
 
-With modern technology, it is not possible to wear wings and fly like a bird, since the human body can’t generate enough force and battery packs are too heavy to power wings mechanically. If I had access to a superintelligent entity, I would have it work on this problem.
+With modern technology, it is not possible to wear wings and fly like a bird, since the human body can’t generate enough force and battery packs are too heavy to power wings mechanically. If I had could direct a superintelligent entity, I would ask it work on this problem.
 
-### Aging
+### Longevity
 
 I believe that with proper technological advancements the human life span could be extended to 1000 years, maybe indefinitely. Life extension is a worthwhile goal because if combined with advanced medicine and cognitive enhancement, the subjective experience of individual humans could get much more interesting.
 
@@ -151,9 +152,9 @@ I work at the intersection of machine learning, computational neuroscience, and 
 
 May 2024 - February 2026
 
-- Developed virtual reality mazes and experiment software for head-fixed mouse navigation. [View Sun Lab NBB GitHub organization](https://github.com/Sun-Lab-NBB)
-- Built a wavefront pathfinding system with a Hidden Markov Model to support navigation analysis and task design.
-- Identified hippocampal place cells from calcium imaging data and contributed across the broader experiment pipeline.
+- Built a Unity pipeline to generate VR mazes for head-fixed mouse navigation experiments, including an MQTT communication protocol for behavioral data collection during optical imaging. [View Sun Lab NBB GitHub organization](https://github.com/Sun-Lab-NBB)
+- Implemented a wavefront planning algorithm over the learned latent state space of a cloned Hidden Markov model (CSCG), enabling goal-directed navigation in partially observed environments.
+- Analyzed hippocampal calcium imaging data with spatial binning, UMAP, and spectral methods to identify place cells and visualize neural representations during reward-guided learning.
 
 #### Neuroscience Research
 
@@ -161,9 +162,7 @@ May 2024 - February 2026
 
 August 2021 - November 2022
 
-- Built a virtual reality system that paired head-fixed mouse navigation with brain imaging.
-- Completed wiring, mechanical setup, and software work around Parker Motion hardware.
-- Programmed a Unity maze control system that mapped mouse movement into real-time wall positioning.
+- Led design of a whisker-based navigation system for head-fixed mice, implementing a real-time control algorithm to map virtual maze position to motor-driven tactile feedback through dynamic wheel actuation.
 
 #### Software Developer
 
@@ -171,9 +170,8 @@ August 2021 - November 2022
 
 May 2022 - August 2022
 
-- Designed an LSTM-based noise detection model for multichannel EEG data.
-- Improved tooling for labeling eye and muscle artifacts in neurophysiology signals.
-- Wrote augmentation code to strengthen model robustness on noisy real-world recordings.
+- Developed an LSTM-based sequence model for detecting muscle and eye artifacts in long-horizon multichannel EEG recordings.
+- Built an EEG augmentation pipeline using random time-window recombination and smooth interpolation to reduce artifact-model overfitting.
 
 #### Instructor
 
@@ -181,8 +179,7 @@ May 2022 - August 2022
 
 June 2021 - August 2021
 
-- Taught Java, Python, AI, and game design to students ages 8 through 17.
-- Prepared daily two-hour lessons and coached small groups through hands-on coding projects.
+- Taught week-long Java and Python courses to cohorts of 8 students, guiding them from core programming concepts to building and presenting independent projects.
 
 ### Education
 
@@ -232,9 +229,8 @@ Graduated December 2025
 - Git
 - Windows
 - Codex
-- Agent-assisted development
 
-#### Programming
+#### Programming Languages
 
 - Python
 - Java
@@ -243,15 +239,41 @@ Graduated December 2025
 - MATLAB
 - OCaml
 
-#### Languages & Interests
+#### Languages
 
 - English
 - Hebrew
-- Chess
-- Bass Guitar
-- Weightlifting
-- Surfing
-- Ultimate Frisbee
+
+## Tutoring
+
+### Tutoring
+
+I am available for tutoring in the OC area.
+
+- Orange County, CA
+- $80 / hour
+
+Get in touch
+
+### Subjects
+
+#### ACT / SAT
+
+#### Mathematics
+
+Algebra I Geometry Algebra II / Trigonometry AP Statistics AP Calculus AB/BC Linear Algebra
+
+#### Agentic Coding
+
+Use Claude Code to build a video game, app, or website
+
+#### Computer Science
+
+AP Computer Science Principles AP Computer Science A
+
+#### Biology
+
+AP Biology
 
 ## Contact
 
