@@ -1047,39 +1047,59 @@ p {
 }
 
 .tutoring-hero {
+  display: flex;
+  flex-direction: column;
   padding: 2.2rem;
 }
 
-.tutoring-title {
-  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
-}
-
 .tutoring-summary {
-  max-width: none;
-  margin-bottom: 0;
+  max-width: 50ch;
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
 }
 
-.tutoring-subject-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.tutoring-hero-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 
-.tutoring-subject-card {
-  padding: 1.1rem 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255, 252, 246, 0.68);
+.tutoring-hero-footer .cv-download {
+  align-self: center;
 }
 
-.tutoring-subject-card h3 {
-  margin-bottom: 0.35rem;
+.tutoring-hero-pills {
+  margin: 0;
+}
+
+.tutoring-hero-pills li {
+  border-color: rgba(159, 77, 46, 0.24);
+  background: rgba(159, 77, 46, 0.1);
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.tutoring-subject-row {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(31, 26, 23, 0.08);
+}
+
+.tutoring-subject-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.tutoring-subject-row h3 {
+  margin-bottom: 0.25rem;
   font-size: 1.05rem;
 }
 
-.tutoring-subject-card p {
+.tutoring-subject-row p {
   margin-bottom: 0;
   font-size: 0.94rem;
+  line-height: 1.45;
 }
 
 .tutoring-contact-intro {
@@ -1089,6 +1109,10 @@ p {
 .tutoring-form {
   display: grid;
   gap: 1rem;
+}
+
+.tutoring-form[hidden] {
+  display: none;
 }
 
 .tutoring-form-row {
@@ -1106,7 +1130,8 @@ p {
 }
 
 .tutoring-form-field input,
-.tutoring-form-field select {
+.tutoring-form-field select,
+.tutoring-form-field textarea {
   padding: 0.75rem 0.9rem;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -1115,10 +1140,12 @@ p {
   font-family: inherit;
   font-size: 0.96rem;
   font-weight: 400;
+  resize: vertical;
 }
 
 .tutoring-form-field input:focus-visible,
-.tutoring-form-field select:focus-visible {
+.tutoring-form-field select:focus-visible,
+.tutoring-form-field textarea:focus-visible {
   outline: 2px solid rgba(118, 54, 29, 0.35);
   outline-offset: 2px;
 }
@@ -1139,4 +1166,80 @@ p {
 
 .tutoring-hidden-frame {
   display: none;
+}
+
+.tutoring-panel-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 26, 23, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 220ms ease, visibility 220ms ease;
+  z-index: 40;
+}
+
+.tutoring-panel-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tutoring-panel {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: min(420px, calc(100vw - 2rem));
+  overflow-y: auto;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--panel-strong);
+  box-shadow: var(--shadow);
+  transform: translateX(calc(100% + 1.5rem));
+  transition: transform 260ms ease;
+  z-index: 41;
+}
+
+.tutoring-panel.is-open {
+  transform: translateX(0);
+}
+
+.tutoring-panel-close {
+  position: sticky;
+  top: 0;
+  left: 100%;
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 999px;
+  background: rgba(159, 77, 46, 0.1);
+  color: var(--accent-deep);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 180ms ease;
+}
+
+.tutoring-panel-close:hover {
+  background: rgba(159, 77, 46, 0.18);
+}
+
+.tutoring-panel .tutoring-form,
+.tutoring-panel .tutoring-form-row {
+  gap: 0.85rem;
+}
+
+.tutoring-panel .tutoring-form-row {
+  grid-template-columns: 1fr;
+}
+
+.tutoring-panel .tutoring-form-status {
+  font-size: 1.05rem;
+}
+
+body.tutoring-panel-locked {
+  overflow: hidden;
 }

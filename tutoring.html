@@ -16,108 +16,126 @@
     <main class="content-page tutoring-page">
       <section class="content-card tutoring-hero">
         <p class="eyebrow">Tutoring</p>
-        <h1 class="tutoring-title">One-on-one tutoring in Orange County</h1>
-        <p class="tutoring-summary">
-          I'm a Cornell CS &amp; Math graduate with research experience in machine learning and computational
-          neuroscience, plus prior classroom teaching experience. I tutor students in the OC area, in person or
-          remote, at $80/hour.
-        </p>
+        <p class="tutoring-summary">I am available for tutoring in the OC area.</p>
+        <div class="tutoring-hero-footer">
+          <ul class="cv-pill-list tutoring-hero-pills">
+            <li>Orange County, CA</li>
+            <li>$80 / hour</li>
+          </ul>
+          <button type="button" class="button-link cv-download" data-tutoring-open>Get in touch</button>
+        </div>
       </section>
 
       <section class="cv-section tutoring-subjects">
         <h2 class="cv-section-title">Subjects</h2>
-        <div class="tutoring-subject-grid">
-          <article class="tutoring-subject-card">
-            <h3>ACT / SAT</h3>
-            <p>Test strategy, timed practice, and targeted review of weak areas.</p>
-          </article>
-          <article class="tutoring-subject-card">
-            <h3>Mathematics</h3>
-            <p>Algebra through calculus, with an emphasis on building durable problem-solving skills.</p>
-          </article>
-          <article class="tutoring-subject-card">
-            <h3>Biology</h3>
-            <p>High school and intro college biology, from cell processes to genetics and physiology.</p>
-          </article>
-          <article class="tutoring-subject-card">
-            <h3>Computer Science</h3>
-            <p>Programming fundamentals, data structures, and algorithms in Python, Java, or C++.</p>
-          </article>
-          <article class="tutoring-subject-card">
-            <h3>Agentic Coding</h3>
-            <p>Working with AI coding agents effectively: prompting, review, and debugging agent-written code.</p>
-          </article>
-        </div>
+
+        <article class="tutoring-subject-row">
+          <h3>ACT / SAT</h3>
+        </article>
+
+        <article class="tutoring-subject-row">
+          <h3>Mathematics</h3>
+          <p>Algebra I<br>Geometry<br>Algebra II / Trigonometry<br>AP Statistics<br>AP Calculus AB/BC<br>Linear Algebra</p>
+        </article>
+
+        <article class="tutoring-subject-row">
+          <h3>Agentic Coding</h3>
+          <p>Use Claude Code to build a video game, app, or website</p>
+        </article>
+
+        <article class="tutoring-subject-row">
+          <h3>Computer Science</h3>
+          <p>AP Computer Science Principles<br>AP Computer Science A</p>
+        </article>
+
+        <article class="tutoring-subject-row">
+          <h3>Biology</h3>
+          <p>AP Biology</p>
+        </article>
       </section>
 
-      <section class="cv-section tutoring-contact">
-        <h2 class="cv-section-title">Get in touch</h2>
-        <p class="tutoring-contact-intro">
-          Fill out the form below and I'll follow up to schedule a time.
-        </p>
-
-        <form
-          class="tutoring-form"
-          data-tutoring-form
-          action="https://docs.google.com/forms/d/e/GOOGLE_FORM_ID/formResponse"
-          method="POST"
-          target="tutoring-form-target"
-        >
-          <div class="tutoring-form-row">
-            <label class="tutoring-form-field">
-              <span>Name</span>
-              <input type="text" name="entry.REPLACE_NAME" required autocomplete="name">
-            </label>
-            <label class="tutoring-form-field">
-              <span>Email or phone</span>
-              <input type="text" name="entry.REPLACE_CONTACT" required autocomplete="email">
-            </label>
-          </div>
-
-          <div class="tutoring-form-row">
-            <label class="tutoring-form-field">
-              <span>Student education level</span>
-              <select name="entry.REPLACE_LEVEL" required>
-                <option value="" disabled selected>Select one</option>
-                <option>Elementary school</option>
-                <option>Middle school</option>
-                <option>High school</option>
-                <option>College</option>
-                <option>Adult</option>
-              </select>
-            </label>
-            <label class="tutoring-form-field">
-              <span>Subject</span>
-              <select name="entry.REPLACE_SUBJECT" required>
-                <option value="" disabled selected>Select one</option>
-                <option>ACT/SAT</option>
-                <option>Mathematics</option>
-                <option>Biology</option>
-                <option>Computer Science</option>
-                <option>Agentic Coding</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="tutoring-form-row">
-            <label class="tutoring-form-field">
-              <span>Location</span>
-              <input type="text" name="entry.REPLACE_LOCATION" placeholder="City or neighborhood" required>
-            </label>
-            <label class="tutoring-form-field">
-              <span>Availability</span>
-              <input type="text" name="entry.REPLACE_AVAILABILITY" placeholder="e.g. weekday evenings, weekend mornings" required>
-            </label>
-          </div>
-
-          <button class="button-link tutoring-submit" type="submit">Send</button>
-          <p class="tutoring-form-status" data-tutoring-status role="status" aria-live="polite"></p>
-        </form>
-
-        <iframe name="tutoring-form-target" data-tutoring-target class="tutoring-hidden-frame" title="form submission target"></iframe>
-      </section>
     </main>
   </div>
+
+  <div class="tutoring-panel-backdrop" data-tutoring-backdrop></div>
+  <aside class="tutoring-panel" data-tutoring-panel aria-hidden="true">
+    <button type="button" class="tutoring-panel-close" data-tutoring-close aria-label="Close">&times;</button>
+
+    <h2 class="cv-section-title">Get in touch</h2>
+    <p class="tutoring-contact-intro">
+      Fill out the form below and I'll follow up to schedule a time. Alternatively, send me an email at
+      <a href="mailto:jacobgroner@gmail.com">jacobgroner@gmail.com</a>.
+    </p>
+
+    <form
+      class="tutoring-form"
+      data-tutoring-form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdMHZOM6V5XXU8_AsOOZGDzmTMc39B8aYr6Ev2ODHjjoFEbrQ/formResponse"
+      method="POST"
+      target="tutoring-form-target"
+    >
+      <div class="tutoring-form-row">
+        <label class="tutoring-form-field">
+          <span>Student Name</span>
+          <input type="text" name="entry.1982462015" required autocomplete="name">
+        </label>
+      </div>
+
+      <div class="tutoring-form-row">
+        <label class="tutoring-form-field">
+          <span>Email</span>
+          <input type="email" name="entry.1526083620" required autocomplete="email">
+        </label>
+        <label class="tutoring-form-field">
+          <span>Phone Number</span>
+          <input type="tel" name="entry.41562339" autocomplete="tel">
+        </label>
+      </div>
+
+      <div class="tutoring-form-row">
+        <label class="tutoring-form-field">
+          <span>Education Level</span>
+          <select name="entry.733028364" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Elementary School</option>
+            <option>Middle School</option>
+            <option>High School</option>
+            <option>College</option>
+          </select>
+        </label>
+        <label class="tutoring-form-field">
+          <span>Subject</span>
+          <select name="entry.1288289356" required>
+            <option value="" disabled selected>Select one</option>
+            <option>ACT/SAT</option>
+            <option>Mathematics</option>
+            <option>Agentic Coding</option>
+            <option>Computer Science</option>
+            <option>Biology</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="tutoring-form-row">
+        <label class="tutoring-form-field">
+          <span>Availability</span>
+          <input type="text" name="entry.1444676775" placeholder="e.g. weekday evenings, weekend mornings" required>
+        </label>
+      </div>
+
+      <label class="tutoring-form-field">
+        <span>Anything else you would like to share?</span>
+        <textarea name="entry.2035388434" rows="4" placeholder="Optional"></textarea>
+      </label>
+
+      <button class="button-link tutoring-submit" type="submit">Send</button>
+    </form>
+
+    <p class="tutoring-form-status" data-tutoring-status role="status" aria-live="polite"></p>
+
+    <iframe name="tutoring-form-target" data-tutoring-target class="tutoring-hidden-frame" title="form submission target"></iframe>
+  </aside>
+
   <footer class="site-footer" aria-labelledby="contact-heading" data-site-footer></footer>
 </body>
 </html>
