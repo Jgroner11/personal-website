@@ -1,6 +1,6 @@
 projects:
   - title: "MIRAGE"
-    abstract: 'A neuroscience-inspired dual-process model for compositional generalization. Project lead: <a href="https://claasbeger.github.io" target="_blank" rel="noreferrer">Claas Beger</a>'
+    abstract: 'A neuroscience-inspired dual-process model for compositional generalization.'
     github: "https://github.com/ClaasBeger/MIRAGE"
     paper: "https://arxiv.org/abs/2507.18868"
     thumbnail: "assets/videos/mirage.png"

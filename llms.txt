@@ -36,7 +36,7 @@ Neural plasticity occurs in discrete time window. For a synapse to be strengthen
 
 Just as cells maintain the chemical composition of their intracellular fluid, neurons maintain their firing rate. This involves increasing excitability when the neuron is silent, and decreasing excitability or increasing inhibitory input when the neuron is tonically active.
 
-### Pyramidal Neurons Learns Through Self Prediction
+### Pyramidal Neurons learn Through Self Prediction
 
 Pyramidal neurons receive input at two distinct synaptic locations: basal and apical. Input to apical dendrites depolarizes the soma serving as a prediction that the neuron will fire. If input to basal dendrites follows, the cell fires signifying a correct prediction and leads to apical dendritic growth and increase in the number of apical spines. The "correct prediction" signal is mediated by a backpropagating action potential up the apical dendrite. Dendritic spines have high input impedance which enables them to hold credit so that the backpropagating action potential impacts specifically the synapses which were responsible for the prediction. [Read the pyramidal neuron prediction paper](https://arxiv.org/abs/1511.00083)
 
@@ -114,7 +114,7 @@ Why do I have a subjective experience? A superintelligence may be able to provid
 
 ### MIRAGE
 
-A neuroscience-inspired dual-process model for compositional generalization. Project lead: [Claas Beger](https://claasbeger.github.io)
+A neuroscience-inspired dual-process model for compositional generalization.
 
 [Paper](https://arxiv.org/abs/2507.18868)
 
