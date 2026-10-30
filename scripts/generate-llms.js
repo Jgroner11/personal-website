@@ -65,6 +65,10 @@ function renderProjects() {
         lines.push("", `[Paper](${project.paper})`);
       }
 
+      if (project.link) {
+        lines.push("", `[Link](${project.link})`);
+      }
+
       if (project.github) {
         lines.push("", `[GitHub](${project.github})`);
       }

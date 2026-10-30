@@ -8,7 +8,6 @@
 - [Purpose](purpose.html)
 - [Projects](projects.html)
 - [CV](cv.html)
-- [Tutoring](tutoring.html)
 
 ## Home
 
@@ -136,6 +135,14 @@ Identify place cells by converting calcium imaging data into the spatial frequen
 
 [GitHub](https://github.com/Jgroner11/Hippo-Fourier)
 
+### Huffman Turing Machine
+
+A Turing Machine that takes in a set of characters and their frequencies and computes an optimal prefix code using the Huffman Coding Algorithm.
+
+[Link](https://morphett.info/turing/turing.html?5ffe4016b61da147eba15996c7523d38)
+
+[GitHub](https://github.com/Jgroner11/huffman_TM)
+
 ## CV
 
 ### AI Researcher
@@ -243,37 +250,6 @@ Graduated December 2025
 
 - English
 - Hebrew
-
-## Tutoring
-
-### Tutoring
-
-I am available for tutoring in the OC area.
-
-- Orange County, CA
-- $80 / hour
-
-Get in touch
-
-### Subjects
-
-#### ACT / SAT
-
-#### Mathematics
-
-Algebra I Geometry Algebra II / Trigonometry AP Statistics AP Calculus AB/BC Linear Algebra
-
-#### Agentic Coding
-
-Use Claude Code to build a video game, app, or website
-
-#### Computer Science
-
-AP Computer Science Principles AP Computer Science A
-
-#### Biology
-
-AP Biology
 
 ## Contact
 

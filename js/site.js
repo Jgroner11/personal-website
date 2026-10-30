@@ -32,7 +32,7 @@ const navLinks = [
   ["purpose.html", "Purpose"],
   ["projects.html", "Projects"],
   ["cv.html", "CV"],
-  ["tutoring.html", "Tutoring"],
+  // Tutoring page (tutoring.html) is hidden for now; add it back here to re-enable.
 ];
 
 const contactLinks = [
