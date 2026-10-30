@@ -18,3 +18,9 @@ projects:
     github: "https://github.com/Jgroner11/Hippo-Fourier"
     thumbnail: "assets/videos/LombScarglePlaceCellDetection.png"
     video: "assets/videos/LombScarglePlaceCellDetection.mp4"
+  - title: "Huffman Turing Machine"
+    abstract: "A Turing Machine that takes in a set of characters and their frequencies and computes an optimal prefix code using the Huffman Coding Algorithm."
+    github: "https://github.com/Jgroner11/huffman_TM"
+    thumbnail: "assets/videos/huffmanTM.png"
+    link: "https://morphett.info/turing/turing.html?5ffe4016b61da147eba15996c7523d38"
+

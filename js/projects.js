@@ -49,7 +49,8 @@ function renderProjectActions(project) {
   return `
     <div class="project-actions">
       ${project.paper ? renderProjectLink(project.paper, "paper", "View paper") : ""}
-      ${renderProjectLink(project.github, "github", "View GitHub repository")}
+      ${project.link ? renderProjectLink(project.link, "link", "Visit project") : ""}
+      ${project.github ? renderProjectLink(project.github, "github", "View GitHub repository") : ""}
     </div>
   `;
 }
